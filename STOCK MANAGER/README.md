@@ -1,6 +1,6 @@
-# STOCK MANAGER (ARDUINO + PHP + SQLITE)
+# STOCK MANAGER (PHP + SQLITE)
 
-Stock Manager es una aplicación local para gestionar el inventario de la despensa usando Arduino, lectores de código de barras, PHP y SQLite.
+Stock Manager es una aplicación local para gestionar el inventario de la despensa utilizando PHP y SQLite.
 
 El sistema permite registrar productos cuando se almacenan y descontarlos cuando se desechan, llevando un control de stock en tiempo real.
 Además, ofrece una funcionalidad de comparación de precios entre supermercados para ayudar a decidir en qué lugar conviene comprar cada producto.
@@ -43,3 +43,6 @@ Importante: Si el mismo producto se compra en otro supermercado y tiene otro có
 - Errores por doble escaneo: Cada vez que se escanee, ya sea para almacenarlos o desecharlos, mostrar el nombre de este producto en la pantalla LCD y realizar un pitido con un buzzer.
 - Precios desactualizados: Los precios de los supermercados cambian constantemente. La aplicación debe tener la posibilidad de actualizar los precios rápidamente. Se podría valorar en un futuro la posibilidad de utilizar web scrapping para conseguir el valor actualizado de los precios.
 
+
+## A futuro...
+Se piensa instalar este programa en una placa arduino NodeMCU con acceso a internet y disponibilidad de lector de codigo de barras para dar asi una funcionalidad real.
