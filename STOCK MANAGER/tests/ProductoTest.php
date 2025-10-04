@@ -21,6 +21,8 @@ class ProductoTest extends TestCase
 
         $this->assertNotEmpty($productos);
         $this->assertEquals("Agua", $productos[0]['nombre']);
+
+        echo "\n[✔] Test Agregar y Obtener Producto: Bien ✅";
     }
 
     public function testEliminarProducto()
@@ -30,6 +32,8 @@ class ProductoTest extends TestCase
 
         $productos = $this->producto->obtenerProductos();
         $this->assertEmpty($productos);
+
+        echo "\n[✔] Test Eliminar Producto: Bien ✅";
     }
 
     public function testBuscarProducto()
@@ -38,5 +42,7 @@ class ProductoTest extends TestCase
         $resultados = $this->producto->buscarProducto("Moni");
         $this->assertNotEmpty($resultados);
         $this->assertEquals("Monitor", $resultados[0]['nombre']);
+
+        echo "\n[✔] Test Buscar Producto: Bien ✅";
     }
 }
