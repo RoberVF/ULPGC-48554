@@ -22,4 +22,21 @@ class ProductoTest extends TestCase
         $this->assertNotEmpty($productos);
         $this->assertEquals("Agua", $productos[0]['nombre']);
     }
+
+    public function testEliminarProducto()
+    {
+        $id = $this->producto->agregarProducto("Raton", 9.99, 20);
+        $this->assertTrue($this->producto->eliminarProducto($id));
+
+        $productos = $this->producto->obtenerProductos();
+        $this->assertEmpty($productos);
+    }
+
+    public function testBuscarProducto()
+    {
+        $this->producto->agregarProducto("Monitor", 199.99, 5);
+        $resultados = $this->producto->buscarProducto("Moni");
+        $this->assertNotEmpty($resultados);
+        $this->assertEquals("Monitor", $resultados[0]['nombre']);
+    }
 }
