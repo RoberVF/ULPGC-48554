@@ -1,19 +1,19 @@
 <?php
 
-namespace Models;
+namespace App\Model;
 
 use App\Model;
 use PDO;
 
 /**
- * Clase Producto para manejar operaciones CRUD sobre la tabla productos.
+ * Clase Product para manejar operaciones CRUD sobre la tabla products.
  *
  * @package Models
  */
 class Product extends Model
 {
     /**
-     * Crea la tabla productos si no existe.
+     * Crea la tabla products si no existe.
      *
      * @return void
      */
@@ -28,12 +28,12 @@ class Product extends Model
     }
 
     /**
-     * Agrega un producto a la base de datos.
+     * Agrega un product a la base de datos.
      *
      * @param string $name
      * @param float $price
      * @param int $stock
-     * @return int ID del producto insertado
+     * @return int ID del product insertado
      */
     public function addProduct(string $name, float $price, int $stock): int
     {
@@ -43,7 +43,7 @@ class Product extends Model
     }
 
     /**
-     * Obtiene todos los productos de la base de datos.
+     * Obtiene todos los products de la base de datos.
      *
      * @return array
      */
@@ -54,7 +54,7 @@ class Product extends Model
     }
 
     /**
-     * Elimina un producto por ID.
+     * Elimina un product por ID.
      *
      * @param int $id
      * @return bool
@@ -66,7 +66,7 @@ class Product extends Model
     }
 
     /**
-     * Busca productos por nombre.
+     * Busca products por nombre.
      *
      * @param string $name
      * @return array
@@ -79,7 +79,7 @@ class Product extends Model
     }
 
     /**
-     * Elimina todos los productos de la tabla (para tests).
+     * Elimina todos los products de la tabla (para tests).
      */
     public function cleanTable()
     {

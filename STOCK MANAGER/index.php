@@ -1,10 +1,19 @@
 <?php
+
+use App\Controllers\ProductController;
+
 require __DIR__ . '/vendor/autoload.php';
 
-use Models\Usuario;
 
-$usuario = new Usuario();
-$usuario->crearTabla();
-$id = $usuario->agregarUsuario("Juan", "juan@test.com", 25);
+$controller = new ProductController();
 
-print_r($usuario->obtenerUsuarios());
+// Add some products for demo
+$controller->addProduct("Water", 1.99, 30);
+$controller->addProduct("Milk", 2.49, 15);
+$controller->addProduct("Nutella", 2.49, 1);
+
+// Get list and show
+$products = $controller->listProducts();
+
+// Load view
+require __DIR__ . '/src/Views/products/list.php';
