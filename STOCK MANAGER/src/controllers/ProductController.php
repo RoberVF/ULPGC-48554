@@ -72,4 +72,40 @@ class ProductController
     {
         return $this->productModel->findProduct($name);
     }
+
+    /**
+     * @brief Actualiza los datos de un product.
+     *
+     * @param int $id ID del product a actualizar.
+     * @param string $name Nuevo nombre.
+     * @param float $price Nuevo precio.
+     * @param int $stock Nuevo stock.
+     * @return bool True si se actualiza correctamente, False si no.
+     */
+    public function updateProduct(int $id, string $name, float $price, int $stock): bool
+    {
+        return $this->productModel->updateProduct($id, $name, $price, $stock);
+    }
+
+    /**
+     * @brief Incrementa el stock de un product en 1.
+     *
+     * @param int $id ID del product.
+     * @return bool True si se incrementa correctamente, False si no.
+     */
+    public function increaseStock(int $id): bool
+    {
+        return $this->productModel->increaseStock($id);
+    }
+
+    /**
+     * @brief Decrementa el stock de un product en 1.
+     *
+     * @param int $id ID del product.
+     * @return bool True si se decrementa correctamente, False si no.
+     */
+    public function decreaseStock(int $id): bool
+    {
+        return $this->productModel->decreaseStock($id);
+    }
 }

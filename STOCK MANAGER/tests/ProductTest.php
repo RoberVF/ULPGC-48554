@@ -45,4 +45,26 @@ class ProductTest extends TestCase
 
         echo "\n[✔] Test Find Product: Find ✅";
     }
+
+    public function testUpdateProduct()
+    {
+        $id = $this->product->addProduct("Old", 5.00, 10);
+        $this->product->updateProduct($id, "New", 9.99, 20);
+
+        $products = $this->product->findProducts();
+        $this->assertEquals("New", $products[0]['name']);
+        $this->assertEquals(20, $products[0]['stock']);
+        echo "\n[✔] Test Update Product ✅";
+    }
+
+    public function testIncreaseDecreaseStock()
+    {
+        $id = $this->product->addProduct("Water", 1.00, 5);
+        $this->product->increaseStock($id);
+        $this->product->decreaseStock($id);
+
+        $product = $this->product->findProducts()[0];
+        $this->assertEquals(5, $product['stock']);
+        echo "\n[✔] Test Increase/Decrease Stock ✅";
+    }
 }

@@ -85,4 +85,43 @@ class Product extends Model
     {
         $this->db->exec("DELETE FROM products");
     }
+
+    /**
+     * Actualiza los datos de un producto.
+     *
+     * @param int $id
+     * @param string $name
+     * @param float $price
+     * @param int $stock
+     * @return bool True si se actualiza correctamente.
+     */
+    public function updateProduct(int $id, string $name, float $price, int $stock): bool
+    {
+        $stmt = $this->db->prepare("UPDATE products SET name = ?, price = ?, stock = ? WHERE id = ?");
+        return $stmt->execute([$name, $price, $stock, $id]);
+    }
+
+    /**
+     * Incrementa el stock de un producto.
+     *
+     * @param int $id
+     * @return bool
+     */
+    public function increaseStock(int $id): bool
+    {
+        $stmt = $this->db->prepare("UPDATE products SET stock = stock + 1 WHERE id = ?");
+        return $stmt->execute([$id]);
+    }
+
+    /**
+     * Disminuye el stock de un producto (sin bajar de cero).
+     *
+     * @param int $id
+     * @return bool
+     */
+    public function decreaseStock(int $id): bool
+    {
+        $stmt = $this->db->prepare("UPDATE products SET stock = CASE WHEN stock > 0 THEN stock - 1 ELSE 0 END WHERE id = ?");
+        return $stmt->execute([$id]);
+    }
 }
