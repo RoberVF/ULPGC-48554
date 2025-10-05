@@ -31,9 +31,11 @@ class ProductController
      *
      * @return array Lista de productos de la db.
      */
-    public function listProducts(): array
+    public function listProducts()
     {
-        return $this->productModel->findProducts();
+        // return $this->productModel->findProducts();
+        $products = $this->productModel->findProducts();
+        include __DIR__ . '/../views/products/list.php';
     }
 
     /**

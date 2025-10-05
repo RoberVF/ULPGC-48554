@@ -7,13 +7,28 @@ require __DIR__ . '/vendor/autoload.php';
 
 $controller = new ProductController();
 
-// Add some products for demo
-$controller->addProduct("Water", 1.99, 30);
-$controller->addProduct("Milk", 2.49, 15);
-$controller->addProduct("Nutella", 2.49, 1);
+$action = $_GET['action'] ?? 'listProducts';
 
-// Get list and show
-$products = $controller->listProducts();
+switch ($action) {
+    case 'addForm':
+        include __DIR__ . '/src/views/products/add.php';
+        break;
 
-// Load view
-require __DIR__ . '/src/Views/products/list.php';
+    case 'deleteForm':
+        include __DIR__ . '/src/views/products/delete.php';
+        break;
+
+    case 'addProduct':
+        $controller->addProduct($_POST['name'], $_POST['price'], $_POST['stock']);
+        header("Location: index.php?action=listProducts");
+        break;
+
+    case 'deleteProduct':
+        $controller->deleteProduct($_POST['id']);
+        header("Location: index.php?action=listProducts");
+        break;
+
+    default:
+        $controller->listProducts();
+        break;
+}
