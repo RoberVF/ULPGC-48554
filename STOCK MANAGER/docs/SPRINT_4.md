@@ -1,4 +1,4 @@
-# SPRINT 4
+# SPRINT 4. TDD Y BDD TEORICOS {#sprint4_page}
 ### Por lo que he visto trabajando con TDD:
 - Primero se escribe el test que falla (el rojo)
 - Despues se escribe lo minimo para que el test funcione correctamente (el verde)

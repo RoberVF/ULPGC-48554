@@ -1,0 +1,202 @@
+\doxysection{App\textbackslash{}Model\textbackslash{}Product Class Reference}
+\hypertarget{class_app_1_1_model_1_1_product}{}\label{class_app_1_1_model_1_1_product}\index{App\textbackslash{}Model\textbackslash{}Product@{App\textbackslash{}Model\textbackslash{}Product}}
+Inheritance diagram for App\textbackslash{}Model\textbackslash{}Product\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_app_1_1_model_1_1_product}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_1_1_model_1_1_product_af065a6a7276701d1bf87304cc65f00ce}{create\+Table}} ()
+\item 
+\mbox{\hyperlink{class_app_1_1_model_1_1_product_a83583620fc09f0646db5ecb220fe97cc}{add\+Product}} (string \$name, float \$price, int \$stock)
+\item 
+\mbox{\hyperlink{class_app_1_1_model_1_1_product_ad43cbf61b951260ae40f21cf80f2d4bb}{find\+Products}} ()
+\item 
+\mbox{\hyperlink{class_app_1_1_model_1_1_product_aee688013d28a6ed193bee7eadc7c8da2}{delete\+Product}} (int \$id)
+\item 
+\mbox{\hyperlink{class_app_1_1_model_1_1_product_a27912f301b66eb0a05ecc2941cd4c353}{find\+Product}} (string \$name)
+\item 
+\mbox{\hyperlink{class_app_1_1_model_1_1_product_acccb86089b37058987399cc1c0d9cdab}{find\+Product\+By\+Name}} (string \$name)
+\item 
+\mbox{\hyperlink{class_app_1_1_model_1_1_product_a4d9da599ff74630c547feb90647f0ef1}{clean\+Table}} ()
+\item 
+\mbox{\hyperlink{class_app_1_1_model_1_1_product_a26df3f880c1922168dfb98572e96cb87}{update\+Product}} (int \$id, string \$name, float \$price, int \$stock)
+\item 
+\mbox{\hyperlink{class_app_1_1_model_1_1_product_a420d05c82fa6a1ccd219ed136984954f}{increase\+Stock}} (int \$id)
+\item 
+\mbox{\hyperlink{class_app_1_1_model_1_1_product_ae3cc0bf66a7ba3464c0dd318ee38a15f}{decrease\+Stock}} (int \$id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_app_1_1_model}{App\textbackslash{}\+Model}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_1_1_model_ac6fadd6b3897052b822d32658df0c3d1}{\+\_\+\+\_\+construct}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_app_1_1_model}{App\textbackslash{}\+Model}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_1_1_model_a972a706a9e1f3a77ee4c2128e98e41ef}{\$db}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_app_1_1_model_1_1_product_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_app_1_1_model_1_1_product_a83583620fc09f0646db5ecb220fe97cc}\index{App\textbackslash{}Model\textbackslash{}Product@{App\textbackslash{}Model\textbackslash{}Product}!addProduct@{addProduct}}
+\index{addProduct@{addProduct}!App\textbackslash{}Model\textbackslash{}Product@{App\textbackslash{}Model\textbackslash{}Product}}
+\doxysubsubsection{\texorpdfstring{addProduct()}{addProduct()}}
+{\footnotesize\ttfamily \label{class_app_1_1_model_1_1_product_a83583620fc09f0646db5ecb220fe97cc} 
+App\textbackslash{}\+Model\textbackslash{}\+Product\+::add\+Product (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{float}]{\$price}{, }\item[{int}]{\$stock}{}\end{DoxyParamCaption})}
+
+Agrega un product a la base de datos.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+float & {\em \$price} & \\
+\hline
+int & {\em \$stock} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int ID del product insertado 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_model_1_1_product_a4d9da599ff74630c547feb90647f0ef1}\index{App\textbackslash{}Model\textbackslash{}Product@{App\textbackslash{}Model\textbackslash{}Product}!cleanTable@{cleanTable}}
+\index{cleanTable@{cleanTable}!App\textbackslash{}Model\textbackslash{}Product@{App\textbackslash{}Model\textbackslash{}Product}}
+\doxysubsubsection{\texorpdfstring{cleanTable()}{cleanTable()}}
+{\footnotesize\ttfamily \label{class_app_1_1_model_1_1_product_a4d9da599ff74630c547feb90647f0ef1} 
+App\textbackslash{}\+Model\textbackslash{}\+Product\+::clean\+Table (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Elimina todos los products de la tabla (para tests). \Hypertarget{class_app_1_1_model_1_1_product_af065a6a7276701d1bf87304cc65f00ce}\index{App\textbackslash{}Model\textbackslash{}Product@{App\textbackslash{}Model\textbackslash{}Product}!createTable@{createTable}}
+\index{createTable@{createTable}!App\textbackslash{}Model\textbackslash{}Product@{App\textbackslash{}Model\textbackslash{}Product}}
+\doxysubsubsection{\texorpdfstring{createTable()}{createTable()}}
+{\footnotesize\ttfamily \label{class_app_1_1_model_1_1_product_af065a6a7276701d1bf87304cc65f00ce} 
+App\textbackslash{}\+Model\textbackslash{}\+Product\+::create\+Table (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Crea la tabla products si no existe.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_model_1_1_product_ae3cc0bf66a7ba3464c0dd318ee38a15f}\index{App\textbackslash{}Model\textbackslash{}Product@{App\textbackslash{}Model\textbackslash{}Product}!decreaseStock@{decreaseStock}}
+\index{decreaseStock@{decreaseStock}!App\textbackslash{}Model\textbackslash{}Product@{App\textbackslash{}Model\textbackslash{}Product}}
+\doxysubsubsection{\texorpdfstring{decreaseStock()}{decreaseStock()}}
+{\footnotesize\ttfamily \label{class_app_1_1_model_1_1_product_ae3cc0bf66a7ba3464c0dd318ee38a15f} 
+App\textbackslash{}\+Model\textbackslash{}\+Product\+::decrease\+Stock (\begin{DoxyParamCaption}\item[{int}]{\$id}{}\end{DoxyParamCaption})}
+
+Disminuye el stock de un producto (sin bajar de cero).
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_model_1_1_product_aee688013d28a6ed193bee7eadc7c8da2}\index{App\textbackslash{}Model\textbackslash{}Product@{App\textbackslash{}Model\textbackslash{}Product}!deleteProduct@{deleteProduct}}
+\index{deleteProduct@{deleteProduct}!App\textbackslash{}Model\textbackslash{}Product@{App\textbackslash{}Model\textbackslash{}Product}}
+\doxysubsubsection{\texorpdfstring{deleteProduct()}{deleteProduct()}}
+{\footnotesize\ttfamily \label{class_app_1_1_model_1_1_product_aee688013d28a6ed193bee7eadc7c8da2} 
+App\textbackslash{}\+Model\textbackslash{}\+Product\+::delete\+Product (\begin{DoxyParamCaption}\item[{int}]{\$id}{}\end{DoxyParamCaption})}
+
+Elimina un product por ID.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_model_1_1_product_a27912f301b66eb0a05ecc2941cd4c353}\index{App\textbackslash{}Model\textbackslash{}Product@{App\textbackslash{}Model\textbackslash{}Product}!findProduct@{findProduct}}
+\index{findProduct@{findProduct}!App\textbackslash{}Model\textbackslash{}Product@{App\textbackslash{}Model\textbackslash{}Product}}
+\doxysubsubsection{\texorpdfstring{findProduct()}{findProduct()}}
+{\footnotesize\ttfamily \label{class_app_1_1_model_1_1_product_a27912f301b66eb0a05ecc2941cd4c353} 
+App\textbackslash{}\+Model\textbackslash{}\+Product\+::find\+Product (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Busca products por nombre.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_model_1_1_product_acccb86089b37058987399cc1c0d9cdab}\index{App\textbackslash{}Model\textbackslash{}Product@{App\textbackslash{}Model\textbackslash{}Product}!findProductByName@{findProductByName}}
+\index{findProductByName@{findProductByName}!App\textbackslash{}Model\textbackslash{}Product@{App\textbackslash{}Model\textbackslash{}Product}}
+\doxysubsubsection{\texorpdfstring{findProductByName()}{findProductByName()}}
+{\footnotesize\ttfamily \label{class_app_1_1_model_1_1_product_acccb86089b37058987399cc1c0d9cdab} 
+App\textbackslash{}\+Model\textbackslash{}\+Product\+::find\+Product\+By\+Name (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Busca un producto por su nombre exacto.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_model_1_1_product_ad43cbf61b951260ae40f21cf80f2d4bb}\index{App\textbackslash{}Model\textbackslash{}Product@{App\textbackslash{}Model\textbackslash{}Product}!findProducts@{findProducts}}
+\index{findProducts@{findProducts}!App\textbackslash{}Model\textbackslash{}Product@{App\textbackslash{}Model\textbackslash{}Product}}
+\doxysubsubsection{\texorpdfstring{findProducts()}{findProducts()}}
+{\footnotesize\ttfamily \label{class_app_1_1_model_1_1_product_ad43cbf61b951260ae40f21cf80f2d4bb} 
+App\textbackslash{}\+Model\textbackslash{}\+Product\+::find\+Products (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Obtiene todos los products de la base de datos.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_model_1_1_product_a420d05c82fa6a1ccd219ed136984954f}\index{App\textbackslash{}Model\textbackslash{}Product@{App\textbackslash{}Model\textbackslash{}Product}!increaseStock@{increaseStock}}
+\index{increaseStock@{increaseStock}!App\textbackslash{}Model\textbackslash{}Product@{App\textbackslash{}Model\textbackslash{}Product}}
+\doxysubsubsection{\texorpdfstring{increaseStock()}{increaseStock()}}
+{\footnotesize\ttfamily \label{class_app_1_1_model_1_1_product_a420d05c82fa6a1ccd219ed136984954f} 
+App\textbackslash{}\+Model\textbackslash{}\+Product\+::increase\+Stock (\begin{DoxyParamCaption}\item[{int}]{\$id}{}\end{DoxyParamCaption})}
+
+Incrementa el stock de un producto.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_model_1_1_product_a26df3f880c1922168dfb98572e96cb87}\index{App\textbackslash{}Model\textbackslash{}Product@{App\textbackslash{}Model\textbackslash{}Product}!updateProduct@{updateProduct}}
+\index{updateProduct@{updateProduct}!App\textbackslash{}Model\textbackslash{}Product@{App\textbackslash{}Model\textbackslash{}Product}}
+\doxysubsubsection{\texorpdfstring{updateProduct()}{updateProduct()}}
+{\footnotesize\ttfamily \label{class_app_1_1_model_1_1_product_a26df3f880c1922168dfb98572e96cb87} 
+App\textbackslash{}\+Model\textbackslash{}\+Product\+::update\+Product (\begin{DoxyParamCaption}\item[{int}]{\$id}{, }\item[{string}]{\$name}{, }\item[{float}]{\$price}{, }\item[{int}]{\$stock}{}\end{DoxyParamCaption})}
+
+Actualiza los datos de un producto.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$id} & \\
+\hline
+string & {\em \$name} & \\
+\hline
+float & {\em \$price} & \\
+\hline
+int & {\em \$stock} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True si se actualiza correctamente. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/model/\mbox{\hyperlink{_product_8php}{Product.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,52 @@
+\chapter{STOCK MANAGER (PHP + SQLITE) }
+\hypertarget{index}{}\label{index}\index{STOCK MANAGER (PHP + SQLITE)@{STOCK MANAGER (PHP + SQLITE)}}
+\label{index_md_docs_2_r_e_a_d_m_e}%
+\Hypertarget{index_md_docs_2_r_e_a_d_m_e}%
+
+
+Stock Manager es una aplicación local para gestionar el inventario de la despensa utilizando PHP y SQLite.
+
+El sistema permite registrar productos cuando se almacenan y descontarlos cuando se desechan, llevando un control de stock en tiempo real. Además, ofrece una funcionalidad de comparación de precios entre supermercados para ayudar a decidir en qué lugar conviene comprar cada producto.\hypertarget{index_autotoc_md3}{}\doxysection{\texorpdfstring{Funcionamiento}{Funcionamiento}}\label{index_autotoc_md3}
+\hypertarget{index_autotoc_md4}{}\doxysubsection{\texorpdfstring{Escaneo de Productos para Almacenarlos}{Escaneo de Productos para Almacenarlos}}\label{index_autotoc_md4}
+
+\begin{DoxyItemize}
+\item Se pone la aplicación en modo ALMACENAR.
+\item El usuario escanea el código de barras con el lector situado en la despensa.
+\item El sistema busca ese código en la base de datos\+:
+\item -\/ Si existe\+: incrementa el stock de ese producto.
+\item -\/ Si no existe\+: solicita al usuario nombre del producto, supermercado donde se ha comprado y precio en ese supermercado. Luego se registra en base de datos.
+\end{DoxyItemize}
+
+Importante\+: Si el mismo producto se compra en otro supermercado y tiene otro código de barras, se registrará como otro producto pero con el mismo nombre. Esto permite comparar precios entre supermercados.\hypertarget{index_autotoc_md5}{}\doxysubsection{\texorpdfstring{Escaneo de Productos para Desecharlos}{Escaneo de Productos para Desecharlos}}\label{index_autotoc_md5}
+
+\begin{DoxyItemize}
+\item Se pone la aplicación en modo DESCARTAR.
+\item El usuario escanea el producto antes de tirarlo a la basura.
+\item El sistema reduce el stock\+:
+\item -\/ Si llega a 0\+: El producto entra en una lista para comprarlo.
+\item -\/ Si queda en negativo\+: indica que se han consumido productos que no estaban registrados como entrada (útil para ajustar stock y planificar compras).
+\end{DoxyItemize}\hypertarget{index_autotoc_md6}{}\doxysubsection{\texorpdfstring{Comparación de Precios y Lista de Compra}{Comparación de Precios y Lista de Compra}}\label{index_autotoc_md6}
+
+\begin{DoxyItemize}
+\item Cada producto tiene precio asociado por supermercado.
+\item El sistema genera automáticamente una lista de compra optimizada, indicando\+:
+\item -\/ Qué productos hay que reponer (los que están en stock negativo o por debajo de un mínimo definido).
+\item -\/ En qué supermercado es más barato comprar cada uno.
+\end{DoxyItemize}\hypertarget{index_autotoc_md7}{}\doxysubsection{\texorpdfstring{Soporte para Múltiples Lectores}{Soporte para Múltiples Lectores}}\label{index_autotoc_md7}
+
+\begin{DoxyItemize}
+\item Se pueden usar varios lectores en diferentes ubicaciones (por ejemplo, uno en la despensa y otro en la cocina junto al cubo de basura).
+\item Cada lector tiene asignado un modo fijo y este puede cambiarse desde la interfaz.
+\item Es posible establecer varios lectores en un mismo modo (por ejemplo, dos lectores en modo ALMACENAR y tres lectores en modo DESCARTAR).
+\end{DoxyItemize}\hypertarget{index_autotoc_md8}{}\doxysection{\texorpdfstring{Posibles problemas y soluciones}{Posibles problemas y soluciones}}\label{index_autotoc_md8}
+
+\begin{DoxyItemize}
+\item Producto escaneado que no existe en la base de datos\+: Solicitar datos al usuario y registrarlo inmediatamente.
+\item Productos idénticos con diferentes códigos de barras\+: Relacionar productos por nombre genérico en la base de datos, de forma que se pueda comparar el precio entre supermercados.
+\item Stock negativo\+: Permitir stock negativo para que se refleje en la lista de compra como cantidad pendiente de reponer.
+\item Confusión entre lectores de entrada y salida\+: Identificar cada lector y mostrar su modo en una pantalla LCD.
+\item Producto sin código de barras\+: Imposible escanearlo. Registro manual en la aplicación.
+\item Errores por doble escaneo\+: Cada vez que se escanee, ya sea para almacenarlos o desecharlos, mostrar el nombre de este producto en la pantalla LCD y realizar un pitido con un buzzer.
+\item Precios desactualizados\+: Los precios de los supermercados cambian constantemente. La aplicación debe tener la posibilidad de actualizar los precios rápidamente. Se podría valorar en un futuro la posibilidad de utilizar web scrapping para conseguir el valor actualizado de los precios.
+\end{DoxyItemize}\hypertarget{index_autotoc_md9}{}\doxysection{\texorpdfstring{A futuro...}{A futuro...}}\label{index_autotoc_md9}
+Se piensa instalar este programa en una placa arduino Node\+MCU con acceso a internet y disponibilidad de lector de codigo de barras para dar asi una funcionalidad real. 

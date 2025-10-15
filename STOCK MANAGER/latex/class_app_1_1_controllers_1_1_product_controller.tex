@@ -1,0 +1,183 @@
+\doxysection{App\textbackslash{}Controllers\textbackslash{}Product\+Controller Class Reference}
+\hypertarget{class_app_1_1_controllers_1_1_product_controller}{}\label{class_app_1_1_controllers_1_1_product_controller}\index{App\textbackslash{}Controllers\textbackslash{}ProductController@{App\textbackslash{}Controllers\textbackslash{}ProductController}}
+
+
+Controlador para manejar operaciones relacionadas con productos.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_1_1_controllers_1_1_product_controller_aef927216013250641fb703411fe364c5}{\+\_\+\+\_\+construct}} ()
+\item 
+\mbox{\hyperlink{class_app_1_1_controllers_1_1_product_controller_a3774369726f2d1d7037b02895aab3a06}{list\+Products}} ()
+\begin{DoxyCompactList}\small\item\em Muestra la lista de todos los products. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_app_1_1_controllers_1_1_product_controller_a602fc639af946212752810c42408f105}{add\+Product}} (string \$name, float \$price, int \$stock)
+\begin{DoxyCompactList}\small\item\em Meter nuevos products en la db. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_app_1_1_controllers_1_1_product_controller_a1d4808feb859bbc80c8df01b2152ec95}{delete\+Product}} (int \$id)
+\begin{DoxyCompactList}\small\item\em Elimina un product por el ID. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_app_1_1_controllers_1_1_product_controller_a0326c3a25fe8e1f7c61772c37b11facb}{search\+Product}} (string \$name)
+\begin{DoxyCompactList}\small\item\em Busca un product por nombre (o parte del nombre). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_app_1_1_controllers_1_1_product_controller_a4fd1f1c2b2f528097b54e77a1cf2a427}{update\+Product}} (int \$id, string \$name, float \$price, int \$stock)
+\begin{DoxyCompactList}\small\item\em Actualiza los datos de un product. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_app_1_1_controllers_1_1_product_controller_abe43be452057b1297c4bdbeaa97f3d2a}{increase\+Stock}} (int \$id)
+\begin{DoxyCompactList}\small\item\em Incrementa el stock de un product en 1. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_app_1_1_controllers_1_1_product_controller_a86fd46670ddd4fa688d01e3e7fdd5f14}{decrease\+Stock}} (int \$id)
+\begin{DoxyCompactList}\small\item\em Decrementa el stock de un product en 1. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Controlador para manejar operaciones relacionadas con productos. 
+
+CRUD y manejo de productos en la aplicacion entre modelo y vista. 
+
+\label{doc-constructors}
+\Hypertarget{class_app_1_1_controllers_1_1_product_controller_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_app_1_1_controllers_1_1_product_controller_aef927216013250641fb703411fe364c5}\index{App\textbackslash{}Controllers\textbackslash{}ProductController@{App\textbackslash{}Controllers\textbackslash{}ProductController}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!App\textbackslash{}Controllers\textbackslash{}ProductController@{App\textbackslash{}Controllers\textbackslash{}ProductController}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_app_1_1_controllers_1_1_product_controller_aef927216013250641fb703411fe364c5} 
+App\textbackslash{}\+Controllers\textbackslash{}\+Product\+Controller\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Constructor -\/ Inicializamos el modelo Product. 
+
+\label{doc-func-members}
+\Hypertarget{class_app_1_1_controllers_1_1_product_controller_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_app_1_1_controllers_1_1_product_controller_a602fc639af946212752810c42408f105}\index{App\textbackslash{}Controllers\textbackslash{}ProductController@{App\textbackslash{}Controllers\textbackslash{}ProductController}!addProduct@{addProduct}}
+\index{addProduct@{addProduct}!App\textbackslash{}Controllers\textbackslash{}ProductController@{App\textbackslash{}Controllers\textbackslash{}ProductController}}
+\doxysubsubsection{\texorpdfstring{addProduct()}{addProduct()}}
+{\footnotesize\ttfamily \label{class_app_1_1_controllers_1_1_product_controller_a602fc639af946212752810c42408f105} 
+App\textbackslash{}\+Controllers\textbackslash{}\+Product\+Controller\+::add\+Product (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{float}]{\$price}{, }\item[{int}]{\$stock}{}\end{DoxyParamCaption})}
+
+
+
+Meter nuevos products en la db. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Nombre del product. \\
+\hline
+float & {\em \$price} & Precio del product. \\
+\hline
+int & {\em \$stock} & Cantidad que metemos (Stock). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int ID del nuevo product. 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_controllers_1_1_product_controller_a86fd46670ddd4fa688d01e3e7fdd5f14}\index{App\textbackslash{}Controllers\textbackslash{}ProductController@{App\textbackslash{}Controllers\textbackslash{}ProductController}!decreaseStock@{decreaseStock}}
+\index{decreaseStock@{decreaseStock}!App\textbackslash{}Controllers\textbackslash{}ProductController@{App\textbackslash{}Controllers\textbackslash{}ProductController}}
+\doxysubsubsection{\texorpdfstring{decreaseStock()}{decreaseStock()}}
+{\footnotesize\ttfamily \label{class_app_1_1_controllers_1_1_product_controller_a86fd46670ddd4fa688d01e3e7fdd5f14} 
+App\textbackslash{}\+Controllers\textbackslash{}\+Product\+Controller\+::decrease\+Stock (\begin{DoxyParamCaption}\item[{int}]{\$id}{}\end{DoxyParamCaption})}
+
+
+
+Decrementa el stock de un product en 1. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$id} & ID del product. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True si se decrementa correctamente, False si no. 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_controllers_1_1_product_controller_a1d4808feb859bbc80c8df01b2152ec95}\index{App\textbackslash{}Controllers\textbackslash{}ProductController@{App\textbackslash{}Controllers\textbackslash{}ProductController}!deleteProduct@{deleteProduct}}
+\index{deleteProduct@{deleteProduct}!App\textbackslash{}Controllers\textbackslash{}ProductController@{App\textbackslash{}Controllers\textbackslash{}ProductController}}
+\doxysubsubsection{\texorpdfstring{deleteProduct()}{deleteProduct()}}
+{\footnotesize\ttfamily \label{class_app_1_1_controllers_1_1_product_controller_a1d4808feb859bbc80c8df01b2152ec95} 
+App\textbackslash{}\+Controllers\textbackslash{}\+Product\+Controller\+::delete\+Product (\begin{DoxyParamCaption}\item[{int}]{\$id}{}\end{DoxyParamCaption})}
+
+
+
+Elimina un product por el ID. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$id} & ID del product. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True si sale bien, False si no. 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_controllers_1_1_product_controller_abe43be452057b1297c4bdbeaa97f3d2a}\index{App\textbackslash{}Controllers\textbackslash{}ProductController@{App\textbackslash{}Controllers\textbackslash{}ProductController}!increaseStock@{increaseStock}}
+\index{increaseStock@{increaseStock}!App\textbackslash{}Controllers\textbackslash{}ProductController@{App\textbackslash{}Controllers\textbackslash{}ProductController}}
+\doxysubsubsection{\texorpdfstring{increaseStock()}{increaseStock()}}
+{\footnotesize\ttfamily \label{class_app_1_1_controllers_1_1_product_controller_abe43be452057b1297c4bdbeaa97f3d2a} 
+App\textbackslash{}\+Controllers\textbackslash{}\+Product\+Controller\+::increase\+Stock (\begin{DoxyParamCaption}\item[{int}]{\$id}{}\end{DoxyParamCaption})}
+
+
+
+Incrementa el stock de un product en 1. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$id} & ID del product. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True si se incrementa correctamente, False si no. 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_controllers_1_1_product_controller_a3774369726f2d1d7037b02895aab3a06}\index{App\textbackslash{}Controllers\textbackslash{}ProductController@{App\textbackslash{}Controllers\textbackslash{}ProductController}!listProducts@{listProducts}}
+\index{listProducts@{listProducts}!App\textbackslash{}Controllers\textbackslash{}ProductController@{App\textbackslash{}Controllers\textbackslash{}ProductController}}
+\doxysubsubsection{\texorpdfstring{listProducts()}{listProducts()}}
+{\footnotesize\ttfamily \label{class_app_1_1_controllers_1_1_product_controller_a3774369726f2d1d7037b02895aab3a06} 
+App\textbackslash{}\+Controllers\textbackslash{}\+Product\+Controller\+::list\+Products (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Muestra la lista de todos los products. 
+
+\begin{DoxyReturn}{Returns}
+array Lista de productos de la db. 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_controllers_1_1_product_controller_a0326c3a25fe8e1f7c61772c37b11facb}\index{App\textbackslash{}Controllers\textbackslash{}ProductController@{App\textbackslash{}Controllers\textbackslash{}ProductController}!searchProduct@{searchProduct}}
+\index{searchProduct@{searchProduct}!App\textbackslash{}Controllers\textbackslash{}ProductController@{App\textbackslash{}Controllers\textbackslash{}ProductController}}
+\doxysubsubsection{\texorpdfstring{searchProduct()}{searchProduct()}}
+{\footnotesize\ttfamily \label{class_app_1_1_controllers_1_1_product_controller_a0326c3a25fe8e1f7c61772c37b11facb} 
+App\textbackslash{}\+Controllers\textbackslash{}\+Product\+Controller\+::search\+Product (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+
+
+Busca un product por nombre (o parte del nombre). 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Nombre o parte del nombre a buscar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Array de products que coinciden. 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_controllers_1_1_product_controller_a4fd1f1c2b2f528097b54e77a1cf2a427}\index{App\textbackslash{}Controllers\textbackslash{}ProductController@{App\textbackslash{}Controllers\textbackslash{}ProductController}!updateProduct@{updateProduct}}
+\index{updateProduct@{updateProduct}!App\textbackslash{}Controllers\textbackslash{}ProductController@{App\textbackslash{}Controllers\textbackslash{}ProductController}}
+\doxysubsubsection{\texorpdfstring{updateProduct()}{updateProduct()}}
+{\footnotesize\ttfamily \label{class_app_1_1_controllers_1_1_product_controller_a4fd1f1c2b2f528097b54e77a1cf2a427} 
+App\textbackslash{}\+Controllers\textbackslash{}\+Product\+Controller\+::update\+Product (\begin{DoxyParamCaption}\item[{int}]{\$id}{, }\item[{string}]{\$name}{, }\item[{float}]{\$price}{, }\item[{int}]{\$stock}{}\end{DoxyParamCaption})}
+
+
+
+Actualiza los datos de un product. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$id} & ID del product a actualizar. \\
+\hline
+string & {\em \$name} & Nuevo nombre. \\
+\hline
+float & {\em \$price} & Nuevo precio. \\
+\hline
+int & {\em \$stock} & Nuevo stock. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True si se actualiza correctamente, False si no. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/controllers/\mbox{\hyperlink{_product_controller_8php}{Product\+Controller.\+php}}\end{DoxyCompactItemize}

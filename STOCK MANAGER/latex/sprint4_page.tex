@@ -1,0 +1,27 @@
+\chapter{SPRINT 4. TDD Y BDD TEORICOS }
+\hypertarget{sprint4_page}{}\label{sprint4_page}\index{SPRINT 4. TDD Y BDD TEORICOS@{SPRINT 4. TDD Y BDD TEORICOS}}
+\label{sprint4_page_md_docs_2_s_p_r_i_n_t__4}%
+\Hypertarget{sprint4_page_md_docs_2_s_p_r_i_n_t__4}%
+\hypertarget{sprint4_page_autotoc_md10}{}\doxysubsection{\texorpdfstring{Por lo que he visto trabajando con TDD\+:}{Por lo que he visto trabajando con TDD\+:}}\label{sprint4_page_autotoc_md10}
+
+\begin{DoxyItemize}
+\item Primero se escribe el test que falla (el rojo)
+\item Despues se escribe lo minimo para que el test funcione correctamente (el verde)
+\item Se refactoriza el codigo para que siga siendo verde pero se mejora el diseno todo lo posible
+\end{DoxyItemize}
+
+Entonces, se busca que el codigo funcione como debe, y que las clases y los metodos esten bien estructurados.
+
+En el proyecto que estamos tratando, seguiriamos este flujo\+:
+\begin{DoxyItemize}
+\item Hacemos un test para el/los modelo, controlador, etc
+\item Se comprueba que los metodos funcionen, es decir, que add\+Product() inserte productos, delete\+Product() los elimine, etc.
+\end{DoxyItemize}\hypertarget{sprint4_page_autotoc_md11}{}\doxysubsection{\texorpdfstring{Por lo que he buscado acerca del BDD\+:}{Por lo que he buscado acerca del BDD\+:}}\label{sprint4_page_autotoc_md11}
+
+\begin{DoxyItemize}
+\item Aqui no buscamos que cada cosa funcione independientemente sino que por ejemplo si tenemos productos en el sistema, cuando elimino uno este debe desaparecer de la db.
+\end{DoxyItemize}
+
+Entonces, ya no solo comprobaremos que delete\+Product() elimine un producto sino que cuando en la web pulsamos el boton de eliminar se elimine un producto, ya no aparezca en la vista, ya no aparezca en la base de datos, etc. Asi, comprobaremos el MVC al completo, no solo el metodo del modelo.
+
+A diferencia del TDD, el BDD si que lo he trabajado en empresas privadas y tengo un conocimiento mas cercano hacia el. Al final del dia, si debemos crear una funcionalidad en la aplicacion, esta funcionalidad debe ser testeada antes de pasarla a produccion y la manera de testearlo es "{}haciendo lo que hace el usuario final"{}. Creo que el paradigma BDD es interesante e indispensable en cualquier tipo de aplicacion pero tambien veo muy interesante seguir realizando TDD a los metodos que se creen en la aplicacion. 

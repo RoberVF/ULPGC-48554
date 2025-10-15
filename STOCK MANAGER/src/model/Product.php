@@ -79,6 +79,19 @@ class Product extends Model
     }
 
     /**
+     * Busca un producto por su nombre exacto.
+     *
+     * @param string $name
+     * @return array
+     */
+    public function findProductByName(string $name): array
+    {
+        $stmt = $this->db->prepare("SELECT * FROM products WHERE name = ?");
+        $stmt->execute([$name]);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    /**
      * Elimina todos los products de la tabla (para tests).
      */
     public function cleanTable()

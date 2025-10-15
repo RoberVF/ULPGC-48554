@@ -1,0 +1,44 @@
+\chapter{SPRINT 5. DOXYGEN Y BDD CON BEHAT INSTAURADOS }
+\hypertarget{sprint5_page}{}\label{sprint5_page}\index{SPRINT 5. DOXYGEN Y BDD CON BEHAT INSTAURADOS@{SPRINT 5. DOXYGEN Y BDD CON BEHAT INSTAURADOS}}
+\label{sprint5_page_md_docs_2_s_p_r_i_n_t__5}%
+\Hypertarget{sprint5_page_md_docs_2_s_p_r_i_n_t__5}%
+\hypertarget{sprint5_page_autotoc_md12}{}\doxysection{\texorpdfstring{Doxygen}{Doxygen}}\label{sprint5_page_autotoc_md12}
+Instaurar doxygen ha sido bastante sencillo y es cierto que le da un punto bastante mas formal al proyecto. Para ello he ejecutado\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{-\/g\ Doxyfile}
+
+\end{DoxyCode}
+
+
+He realizado diferentes configuraciones en el archivo Doxyfile que se ha generado para que doxygen consiga "{}entender"{} mi proyecto y despues he ejecutado\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Doxyfile}
+
+\end{DoxyCode}
+
+
+Tras esto, se ha creado una carpeta html/ en la cual existe un archivo {\bfseries{index.\+html}} que muestra toda la documentacion del proyecto.\hypertarget{sprint5_page_autotoc_md13}{}\doxysection{\texorpdfstring{BDD CON BEHAT}{BDD CON BEHAT}}\label{sprint5_page_autotoc_md13}
+En primer lugar comenzaremos incluyendo {\bfseries{behat}} con composer en el proyecto\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{require\ -\/-\/dev\ behat/behat}
+
+\end{DoxyCode}
+
+
+Una vez instalado, para inicializarlo utilizare\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{/vendor/bin/behat\ -\/-\/init}
+
+\end{DoxyCode}
+
+
+Esto creara una carpeta en la raiz del proyecto llamada {\ttfamily features/} donde se crearan los archivos {\ttfamily .feature} los cuales seran los encargados de contener la informacion de los tests en lenguaje natural. Por otro parte tenemos {\ttfamily Feature\+Context.\+php} archivo que sera un puente entre el lenguaje Gherkin (el escrito en {\ttfamily .feature}) y el codigo PHP.
+
+Para correr cada uno de los archivos se utilizara la siguiente sentencia\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{/vendor/bin/behat\ features/add\_product.feature}
+
+\end{DoxyCode}
+
+
+Entonces, tras haber realizado ciertos tests concluyo que TDD con PHPUnit nos asegura que cada cosa funciona bien individualmente mientras que BDD con Behat nos asegura que el flujo de trabajo sea correcto. 
