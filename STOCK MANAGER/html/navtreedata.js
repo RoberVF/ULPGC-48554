@@ -32,7 +32,8 @@ var NAVTREE =
     [ "SPRINT 4. TDD Y BDD TEORICOS", "sprint4_page.html", null ],
     [ "SPRINT 5. DOXYGEN Y BDD CON BEHAT INSTAURADOS", "sprint5_page.html", [
       [ "Doxygen", "sprint5_page.html#autotoc_md12", null ],
-      [ "BDD CON BEHAT", "sprint5_page.html#autotoc_md13", null ]
+      [ "BDD CON BEHAT", "sprint5_page.html#autotoc_md13", null ],
+      [ "Adicional", "sprint5_page.html#autotoc_md14", null ]
     ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ]

@@ -1,7 +1,4 @@
 Feature: Gestion de Inventario
-  Para poder llevar un control del stock
-  Como usuario
-  Quiero poder agregar productos al sistema
 
   Scenario: Agregar un producto nuevo al inventario
     Given el inventario esta vacio

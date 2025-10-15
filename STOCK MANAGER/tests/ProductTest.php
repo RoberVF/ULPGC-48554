@@ -67,4 +67,10 @@ class ProductTest extends TestCase
         $this->assertEquals(5, $product['stock']);
         echo "\n[✔] Test Increase/Decrease Stock ✅";
     }
+
+    public function testCannotAddProductWithEmptyName()
+    {
+        $this->expectException(\InvalidArgumentException::class);
+        $this->product->addProduct("", 10.50, 5);
+    }
 }

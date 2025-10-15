@@ -37,6 +37,9 @@ class Product extends Model
      */
     public function addProduct(string $name, float $price, int $stock): int
     {
+        if (trim($name) === '') {
+            throw new \InvalidArgumentException("El nombre del producto no puede estar vacio.");
+        }
         $stmt = $this->db->prepare("INSERT INTO products (name, price, stock) VALUES (?, ?, ?)");
         $stmt->execute([$name, $price, $stock]);
         return (int) $this->db->lastInsertId();

@@ -29,3 +29,6 @@ Para correr cada uno de los archivos se utilizara la siguiente sentencia:
 
 Entonces, tras haber realizado ciertos tests concluyo que TDD con PHPUnit nos asegura que cada cosa funciona bien individualmente 
 mientras que BDD con Behat nos asegura que el flujo de trabajo sea correcto.
+
+## Adicional
+Ademas, he agregado un test que comprueba que no se metan productos sin nombre y arreglado un test del controlador
