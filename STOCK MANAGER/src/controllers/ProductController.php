@@ -33,9 +33,8 @@ class ProductController
      */
     public function listProducts()
     {
-        // return $this->productModel->findProducts();
-        // $products = $this->productModel->findProducts();
-        // include __DIR__ . '/../views/products/list.php';
+        $products = $this->productModel->findProducts();
+        include __DIR__ . '/../views/products/list.php';
         return $this->productModel->findProducts();
     }
 
