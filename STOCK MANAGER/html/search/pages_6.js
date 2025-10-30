@@ -3,7 +3,7 @@ var searchData=
   ['de_20bdd_20basada_20en_20tdd_0',['Documentacion de BDD basada en TDD',['../sprint6_page.html#autotoc_md15',1,'']]],
   ['de_20compra_1',['Comparación de Precios y Lista de Compra',['../index.html#autotoc_md6',1,'']]],
   ['de_20mink_2',['SPRINT 6. DOCUMENTACION BDD BASADA EN TDD E INTEGRACION DE MINK',['../sprint6_page.html',1,'']]],
-  ['de_20mink_3',['Configuracion de Mink',['../sprint6_page.html#autotoc_md18',1,'']]],
+  ['de_20mink_3',['de Mink',['../sprint6_page.html#autotoc_md18',1,'Configuracion de Mink'],['../sprint6_page.html#autotoc_md19',1,'Problemas en el uso de Mink']]],
   ['de_20mink_20y_20goutte_4',['Instalacion de Mink y Goutte',['../sprint6_page.html#autotoc_md17',1,'']]],
   ['de_20precios_20y_20lista_20de_20compra_5',['Comparación de Precios y Lista de Compra',['../index.html#autotoc_md6',1,'']]],
   ['de_20productos_20para_20almacenarlos_6',['Escaneo de Productos para Almacenarlos',['../index.html#autotoc_md4',1,'']]],

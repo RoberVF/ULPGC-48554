@@ -110,7 +110,10 @@ Instalacion de Mink y Goutte</h3>
 </div><!-- fragment --><p> Esto instalara la ultima version actualizada de ambos. Hay que tener en cuenta que he debido de eliminar <em>composer.lock</em> para poder realizar la instalacion correctamente.</p>
 <h3 class="doxsection"><a class="anchor" id="autotoc_md18"></a>
 Configuracion de Mink</h3>
-<p>Para configurar <b>Mink</b> he tenido que crear en la raiz del proyecto el archivo <span class="tt">behat.yml</span>. Este archivo sera el que le especifique a <b>Mink</b> en que lugar debe actuar para poder simular la navegacion. Ademas, se debe de especificar cual sera el contexto del proyecto, en nuestro caso <span class="tt">FeatureContext</span>, que utilizaremos <b>Goute</b> y cual sera la url base del proyecto. </p>
+<p>Para configurar <b>Mink</b> he tenido que crear en la raiz del proyecto el archivo <span class="tt">behat.yml</span>. Este archivo sera el que le especifique a <b>Mink</b> en que lugar debe actuar para poder simular la navegacion. Ademas, se debe de especificar cual sera el contexto del proyecto, en nuestro caso <span class="tt">FeatureContext</span>, que utilizaremos <b>Goute</b> y cual sera la url base del proyecto.</p>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md19"></a>
+Problemas en el uso de Mink</h3>
+<p>El avance del SPRINT 6 esta bloqueado debido a un conflicto de dependencias irresoluble en <b>Composer</b>. La version actual de <b>Behat</b> (^3.25) requiere librerias de <b>Symfony</b> modernas (v5+), pero la extension de <b>Mink</b> (<em>mink-extension</em>) que estoy intentando instalar solo encuentra versiones antiguas que dependen de <b>Symfony</b> v2/v3. <b>Composer</b> no puede trabajar con estas diferentes versiones, lo que impide instalar las herramientas de testing web (<b>Mink/Goutte</b>) necesarias para continuar. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

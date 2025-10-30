@@ -1,9 +1,7 @@
 {
     "require-dev": {
         "phpunit/phpunit": "^11.5",
-        "behat/behat": "^3.25",
-        "behat/mink": "^1.12",
-        "behat/mink-goutte-driver": "^2.0"
+        "behat/behat": "^3.25"
     },
     "autoload": {
         "psr-4": {

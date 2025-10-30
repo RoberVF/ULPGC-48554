@@ -26,4 +26,6 @@ Esto instalara la ultima version actualizada de ambos. Hay que tener en cuenta q
 Para configurar **Mink** he tenido que crear en la raiz del proyecto el archivo ```behat.yml```. Este archivo sera el que le especifique a **Mink** en que lugar debe actuar para poder simular la navegacion.
 Ademas, se debe de especificar cual sera el contexto del proyecto, en nuestro caso ```FeatureContext```, que utilizaremos **Goute** y cual sera la url base del proyecto.
 
+#### Problemas en el uso de Mink
+El avance del SPRINT 6 esta bloqueado debido a un conflicto de dependencias irresoluble en **Composer**. La version actual de **Behat** (^3.25) requiere librerias de **Symfony** modernas (v5+), pero la extension de **Mink** (*mink-extension*) que estoy intentando instalar solo encuentra versiones antiguas que dependen de **Symfony** v2/v3. **Composer** no puede trabajar con estas diferentes versiones, lo que impide instalar las herramientas de testing web (**Mink/Goutte**) necesarias para continuar.
 
