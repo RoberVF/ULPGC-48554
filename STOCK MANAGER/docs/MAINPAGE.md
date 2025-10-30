@@ -8,4 +8,5 @@ La aplicacion funcionara en localhost con:
 ## Sprints
 
 * [Sprint 4: TDD y BDD teoricos](@ref sprint4_page)
-* [Sprint 5: Doxygen y BDD instaurados](@ref sprint5_page)
+* [Sprint 5: Doxygen y BDD instaurados. Integracion de BEHAT](@ref sprint5_page)
+* [Sprint 6: Documentacion BDD basada en TDD. Integracion de MINK](@ref sprint6_page) 

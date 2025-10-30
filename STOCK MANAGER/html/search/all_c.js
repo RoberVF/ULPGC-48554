@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['increasestock_0',['increaseStock',['../class_app_1_1_controllers_1_1_product_controller.html#abe43be452057b1297c4bdbeaa97f3d2a',1,'App\Controllers\ProductController\increaseStock()'],['../class_app_1_1_model_1_1_product.html#a420d05c82fa6a1ccd219ed136984954f',1,'App\Model\Product\increaseStock()']]],
-  ['instaurados_1',['SPRINT 5. DOXYGEN Y BDD CON BEHAT INSTAURADOS',['../sprint5_page.html',1,'']]]
+  ['he_20buscado_20acerca_20del_20bdd_3a_0',['Por lo que he buscado acerca del BDD:',['../sprint4_page.html#autotoc_md11',1,'']]],
+  ['he_20visto_20trabajando_20con_20tdd_3a_1',['Por lo que he visto trabajando con TDD:',['../sprint4_page.html#autotoc_md10',1,'']]]
 ];

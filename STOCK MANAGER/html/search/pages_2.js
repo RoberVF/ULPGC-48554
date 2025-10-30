@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['a_20futuro_0',['A futuro...',['../index.html#autotoc_md9',1,'']]],
-  ['acerca_20del_20bdd_3a_1',['Por lo que he buscado acerca del BDD:',['../sprint4_page.html#autotoc_md11',1,'']]],
-  ['adicional_2',['Adicional',['../sprint5_page.html#autotoc_md14',1,'']]],
-  ['almacenarlos_3',['Escaneo de Productos para Almacenarlos',['../index.html#autotoc_md4',1,'']]]
+  ['6_20documentacion_20bdd_20basada_20en_20tdd_20e_20integracion_20de_20mink_0',['SPRINT 6. DOCUMENTACION BDD BASADA EN TDD E INTEGRACION DE MINK',['../sprint6_page.html',1,'']]]
 ];

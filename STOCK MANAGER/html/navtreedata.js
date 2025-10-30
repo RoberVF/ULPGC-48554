@@ -35,6 +35,7 @@ var NAVTREE =
       [ "BDD CON BEHAT", "sprint5_page.html#autotoc_md13", null ],
       [ "Adicional", "sprint5_page.html#autotoc_md14", null ]
     ] ],
+    [ "SPRINT 6. DOCUMENTACION BDD BASADA EN TDD E INTEGRACION DE MINK", "sprint6_page.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ]
     ] ],

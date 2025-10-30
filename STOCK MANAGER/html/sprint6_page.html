@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>STOCK MANAGER: Related Pages</title>
+<title>STOCK MANAGER: SPRINT 6. DOCUMENTACION BDD BASADA EN TDD E INTEGRACION DE MINK</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(function(){initNavTree('pages.html','',''); });
+$(function(){initNavTree('sprint6_page.html','',''); });
 </script>
 <div id="container">
 <div id="doc-content">
@@ -88,20 +88,32 @@ $(function(){initNavTree('pages.html','',''); });
 </div>
 </div>
 
-<div class="header">
-  <div class="headertitle"><div class="title">Related Pages</div></div>
+<div><div class="header">
+  <div class="headertitle"><div class="title">SPRINT 6. DOCUMENTACION BDD BASADA EN TDD E INTEGRACION DE MINK </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock">Here is a list of all related documentation pages:</div><div class="directory">
-<table class="directory">
-<tr id="row_0_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="md_docs_2_m_a_i_n_p_a_g_e.html" target="_self">Documentación del Proyecto STOCK MANAGER</a></td><td class="desc"></td></tr>
-<tr id="row_1_" class="odd"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="sprint4_page.html" target="_self">SPRINT 4. TDD Y BDD TEORICOS</a></td><td class="desc"></td></tr>
-<tr id="row_2_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="sprint5_page.html" target="_self">SPRINT 5. DOXYGEN Y BDD CON BEHAT INSTAURADOS</a></td><td class="desc"></td></tr>
-<tr id="row_3_" class="odd"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="sprint6_page.html" target="_self">SPRINT 6. DOCUMENTACION BDD BASADA EN TDD E INTEGRACION DE MINK</a></td><td class="desc"></td></tr>
-</table>
-</div><!-- directory -->
-</div><!-- contents -->
+<div class="textblock"><p><a class="anchor" id="md_docs_2_s_p_r_i_n_t__6"></a></p>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md15"></a>
+Sobre Mink y sus drivers</h2>
+<p><b>Mink</b> es una biblioteca de PHP de codigo abierto que actua como un controlador o emulador de navegador para aplicaciones web. Con esta herramienta se pueden simular las interacciones reales de un usuario al "clicar en la web directamente".</p>
+<p><b>Mink</b> traducira los pasos del lenguaje Gherkin de Behat (ej., "Cuando hago clic en el boton 'Incluir Producto'") en acciones reales del navegador. Para ello, debemos utilizar un driver para el navegador llamado <b>Goutte</b>. Este driver es un cliente simple HTTP para hacer peticiones sin Javascript, perfecto para nuestro proyecto ya que no estamos utilizando JS.</p>
+<p>He visto que existen drivers mas potentes como <b>ChromeDriver</b> o <b>Selenium2Driver</b> que si que permiten controlar un navegador real como <em>Chrome</em> para ejecutar las pruebas dependientes de Javascript pero no creo que sea necesario utilizar herramientas mas complejas ya que con lo que ofrece <b>Goutte</b> sera suficiente.</p>
+<p>Utilizando <b>Mink</b>, la capa BDD hecha con <b>Behat</b> podra validar el flujo completo de la aplicacion, incluyendo ahi la interfaz y no quedandonos solamente en la logica del backend.</p>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md16"></a>
+Documentacion de BDD basada en TDD</h2>
+<p>Actualmente, nuestro proyecto esta siguiendo una estructura de pruebas por capas, donde TDD y BDD se complementan en lugar de sustitutirse.</p>
+<p>En cuanto al TDD, implementado con <b>PHPUnit</b>, buscammos que cada unidad de codigo en si misma, siendo estas clases y metodos, funcionen segun lo previsto. Esto implica por ejemplo que un metodo para insertar productos en la base de datos, esta creando una nueva fila en ella o que un metodo pensado para decrementar el stock de un producto lo esta decrementando correctamente.</p>
+<p>Por otra parte, tenemos el BDD, implementado con <b>Behat</b>, lo cual comprueba el flujo de trabajo completo a traves de la metodologia MVC. Esto implica que no solamente se valide el metodo de insertar el producto sino que valide el comportamiento completo del sistema desde la perspectiva del usuario (se integran los datos en el formulario para crear un nuevo producto, se recibe la solicitud en el controlador y el producto aparece correctamente listado en la lista de productos totales de la vista). </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
 </div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
 </div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
