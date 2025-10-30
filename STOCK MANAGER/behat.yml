@@ -1,0 +1,18 @@
+default:
+    suites:
+        default:
+            contexts:
+                # Contexto del proyecto
+                - FeatureContext
+                # Extension de Mink por defecto
+                - Behat\MinkExtension\Context\MinkContext 
+    
+    extensions:
+        Behat\MinkExtension:
+            # 1. URL base de la app
+            base_url: 'http://localhost:8000' 
+            
+            # 2. Aqui le decimos que usaremos el driver de Goutte
+            sessions:
+                default:
+                    goutte: ~ 
