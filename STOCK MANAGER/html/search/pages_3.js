@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['a_20futuro_0',['A futuro...',['../index.html#autotoc_md9',1,'']]],
-  ['acerca_20del_20bdd_3a_1',['Por lo que he buscado acerca del BDD:',['../sprint4_page.html#autotoc_md11',1,'']]],
-  ['adicional_2',['Adicional',['../sprint5_page.html#autotoc_md14',1,'']]],
-  ['almacenarlos_3',['Escaneo de Productos para Almacenarlos',['../index.html#autotoc_md4',1,'']]]
+  ['7_20migracion_20del_20proyecto_20a_20arduino_20esp_20web_0',['SPRINT 7. MIGRACION DEL PROYECTO A ARDUINO, ESP, WEB',['../sprint7_page.html',1,'']]]
 ];

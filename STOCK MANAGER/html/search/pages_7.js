@@ -1,10 +1,23 @@
 var searchData=
 [
-  ['e_20integracion_20de_20mink_0',['SPRINT 6. DOCUMENTACION BDD BASADA EN TDD E INTEGRACION DE MINK',['../sprint6_page.html',1,'']]],
-  ['el_20uso_20de_20mink_1',['Problemas en el uso de Mink',['../sprint6_page.html#autotoc_md19',1,'']]],
-  ['en_20el_20uso_20de_20mink_2',['Problemas en el uso de Mink',['../sprint6_page.html#autotoc_md19',1,'']]],
-  ['en_20tdd_3',['Documentacion de BDD basada en TDD',['../sprint6_page.html#autotoc_md15',1,'']]],
-  ['en_20tdd_20e_20integracion_20de_20mink_4',['SPRINT 6. DOCUMENTACION BDD BASADA EN TDD E INTEGRACION DE MINK',['../sprint6_page.html',1,'']]],
-  ['escaneo_20de_20productos_20para_20almacenarlos_5',['Escaneo de Productos para Almacenarlos',['../index.html#autotoc_md4',1,'']]],
-  ['escaneo_20de_20productos_20para_20desecharlos_6',['Escaneo de Productos para Desecharlos',['../index.html#autotoc_md5',1,'']]]
+  ['datos_0',['La Base de Datos',['../sprint7_page.html#autotoc_md22',1,'']]],
+  ['de_20bdd_20basada_20en_20tdd_1',['Documentacion de BDD basada en TDD',['../sprint6_page.html#autotoc_md15',1,'']]],
+  ['de_20compra_2',['Comparación de Precios y Lista de Compra',['../index.html#autotoc_md6',1,'']]],
+  ['de_20datos_3',['La Base de Datos',['../sprint7_page.html#autotoc_md22',1,'']]],
+  ['de_20mink_4',['SPRINT 6. DOCUMENTACION BDD BASADA EN TDD E INTEGRACION DE MINK',['../sprint6_page.html',1,'']]],
+  ['de_20mink_5',['de Mink',['../sprint6_page.html#autotoc_md18',1,'Configuracion de Mink'],['../sprint6_page.html#autotoc_md19',1,'Problemas en el uso de Mink']]],
+  ['de_20mink_20y_20goutte_6',['Instalacion de Mink y Goutte',['../sprint6_page.html#autotoc_md17',1,'']]],
+  ['de_20precios_20y_20lista_20de_20compra_7',['Comparación de Precios y Lista de Compra',['../index.html#autotoc_md6',1,'']]],
+  ['de_20productos_20para_20almacenarlos_8',['Escaneo de Productos para Almacenarlos',['../index.html#autotoc_md4',1,'']]],
+  ['de_20productos_20para_20desecharlos_9',['Escaneo de Productos para Desecharlos',['../index.html#autotoc_md5',1,'']]],
+  ['del_20bdd_3a_10',['Por lo que he buscado acerca del BDD:',['../sprint4_page.html#autotoc_md11',1,'']]],
+  ['del_20proyecto_20a_20arduino_20esp_20web_11',['SPRINT 7. MIGRACION DEL PROYECTO A ARDUINO, ESP, WEB',['../sprint7_page.html',1,'']]],
+  ['del_20proyecto_20stock_20manager_12',['Documentación del Proyecto STOCK MANAGER',['../md_docs_2_m_a_i_n_p_a_g_e.html',1,'']]],
+  ['desecharlos_13',['Escaneo de Productos para Desecharlos',['../index.html#autotoc_md5',1,'']]],
+  ['documentación_20del_20proyecto_20stock_20manager_14',['Documentación del Proyecto STOCK MANAGER',['../md_docs_2_m_a_i_n_p_a_g_e.html',1,'']]],
+  ['documentacion_20bdd_20basada_20en_20tdd_20e_20integracion_20de_20mink_15',['SPRINT 6. DOCUMENTACION BDD BASADA EN TDD E INTEGRACION DE MINK',['../sprint6_page.html',1,'']]],
+  ['documentacion_20de_20bdd_20basada_20en_20tdd_16',['Documentacion de BDD basada en TDD',['../sprint6_page.html#autotoc_md15',1,'']]],
+  ['doxygen_17',['Doxygen',['../sprint5_page.html#autotoc_md12',1,'']]],
+  ['doxygen_20y_20bdd_20con_20behat_20instaurados_18',['SPRINT 5. DOXYGEN Y BDD CON BEHAT INSTAURADOS',['../sprint5_page.html',1,'']]],
+  ['drivers_19',['Sobre Mink y sus drivers',['../sprint6_page.html#autotoc_md16',1,'']]]
 ];

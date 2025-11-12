@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['goutte_0',['Instalacion de Mink y Goutte',['../sprint6_page.html#autotoc_md17',1,'']]]
+  ['funcionamiento_0',['Funcionamiento',['../index.html#autotoc_md3',1,'']]],
+  ['futuro_1',['A futuro...',['../index.html#autotoc_md9',1,'']]]
 ];

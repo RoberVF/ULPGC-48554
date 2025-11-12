@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['múltiples_20lectores_0',['Soporte para Múltiples Lectores',['../index.html#autotoc_md7',1,'']]],
-  ['manager_1',['Documentación del Proyecto STOCK MANAGER',['../md_docs_2_m_a_i_n_p_a_g_e.html',1,'']]],
-  ['manager_20php_20sqlite_2',['STOCK MANAGER (PHP + SQLITE)',['../index.html',1,'']]],
-  ['mink_3',['SPRINT 6. DOCUMENTACION BDD BASADA EN TDD E INTEGRACION DE MINK',['../sprint6_page.html',1,'']]],
-  ['mink_4',['Mink',['../sprint6_page.html#autotoc_md18',1,'Configuracion de Mink'],['../sprint6_page.html#autotoc_md19',1,'Problemas en el uso de Mink']]],
-  ['mink_20y_20goutte_5',['Instalacion de Mink y Goutte',['../sprint6_page.html#autotoc_md17',1,'']]],
-  ['mink_20y_20sus_20drivers_6',['Sobre Mink y sus drivers',['../sprint6_page.html#autotoc_md16',1,'']]]
+  ['la_20base_20de_20datos_0',['La Base de Datos',['../sprint7_page.html#autotoc_md22',1,'']]],
+  ['la_20pantalla_20tft_1',['La pantalla TFT',['../sprint7_page.html#autotoc_md23',1,'']]],
+  ['la_20web_20app_2',['La Web App',['../sprint7_page.html#autotoc_md21',1,'']]],
+  ['lectores_3',['Soporte para Múltiples Lectores',['../index.html#autotoc_md7',1,'']]],
+  ['lista_20de_20compra_4',['Comparación de Precios y Lista de Compra',['../index.html#autotoc_md6',1,'']]],
+  ['lo_20que_20he_20buscado_20acerca_20del_20bdd_3a_5',['Por lo que he buscado acerca del BDD:',['../sprint4_page.html#autotoc_md11',1,'']]],
+  ['lo_20que_20he_20visto_20trabajando_20con_20tdd_3a_6',['Por lo que he visto trabajando con TDD:',['../sprint4_page.html#autotoc_md10',1,'']]]
 ];
