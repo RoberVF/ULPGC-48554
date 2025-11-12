@@ -1,5 +1,18 @@
 var searchData=
 [
-  ['que_20he_20buscado_20acerca_20del_20bdd_3a_0',['Por lo que he buscado acerca del BDD:',['../sprint4_page.html#autotoc_md11',1,'']]],
-  ['que_20he_20visto_20trabajando_20con_20tdd_3a_1',['Por lo que he visto trabajando con TDD:',['../sprint4_page.html#autotoc_md10',1,'']]]
+  ['pantalla_20tft_0',['La pantalla TFT',['../sprint7_page.html#autotoc_md23',1,'']]],
+  ['para_20almacenarlos_1',['Escaneo de Productos para Almacenarlos',['../index.html#autotoc_md4',1,'']]],
+  ['para_20desecharlos_2',['Escaneo de Productos para Desecharlos',['../index.html#autotoc_md5',1,'']]],
+  ['para_20múltiples_20lectores_3',['Soporte para Múltiples Lectores',['../index.html#autotoc_md7',1,'']]],
+  ['php_20sqlite_4',['STOCK MANAGER (PHP + SQLITE)',['../index.html',1,'']]],
+  ['por_20lo_20que_20he_20buscado_20acerca_20del_20bdd_3a_5',['Por lo que he buscado acerca del BDD:',['../sprint4_page.html#autotoc_md11',1,'']]],
+  ['por_20lo_20que_20he_20visto_20trabajando_20con_20tdd_3a_6',['Por lo que he visto trabajando con TDD:',['../sprint4_page.html#autotoc_md10',1,'']]],
+  ['posibles_20problemas_20y_20soluciones_7',['Posibles problemas y soluciones',['../index.html#autotoc_md8',1,'']]],
+  ['precios_20y_20lista_20de_20compra_8',['Comparación de Precios y Lista de Compra',['../index.html#autotoc_md6',1,'']]],
+  ['problemas_20en_20el_20uso_20de_20mink_9',['Problemas en el uso de Mink',['../sprint6_page.html#autotoc_md19',1,'']]],
+  ['problemas_20y_20soluciones_10',['Posibles problemas y soluciones',['../index.html#autotoc_md8',1,'']]],
+  ['productos_20para_20almacenarlos_11',['Escaneo de Productos para Almacenarlos',['../index.html#autotoc_md4',1,'']]],
+  ['productos_20para_20desecharlos_12',['Escaneo de Productos para Desecharlos',['../index.html#autotoc_md5',1,'']]],
+  ['proyecto_20a_20arduino_20esp_20web_13',['SPRINT 7. MIGRACION DEL PROYECTO A ARDUINO, ESP, WEB',['../sprint7_page.html',1,'']]],
+  ['proyecto_20stock_20manager_14',['Documentación del Proyecto STOCK MANAGER',['../md_docs_2_m_a_i_n_p_a_g_e.html',1,'']]]
 ];

@@ -10,3 +10,4 @@ La aplicacion funcionara en localhost con:
 * [Sprint 4: TDD y BDD teoricos](@ref sprint4_page)
 * [Sprint 5: Doxygen y BDD instaurados. Integracion de BEHAT](@ref sprint5_page)
 * [Sprint 6: Documentacion BDD basada en TDD. Integracion de MINK](@ref sprint6_page) 
+* [Sprint 7. Migracion del proyecto a arduino, esp, web](@ref sprint7_page)

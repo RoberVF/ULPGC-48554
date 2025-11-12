@@ -36,6 +36,13 @@ var NAVTREE =
       [ "Adicional", "sprint5_page.html#autotoc_md14", null ]
     ] ],
     [ "SPRINT 6. DOCUMENTACION BDD BASADA EN TDD E INTEGRACION DE MINK", "sprint6_page.html", null ],
+    [ "SPRINT 7. MIGRACION DEL PROYECTO A ARDUINO, ESP, WEB", "sprint7_page.html", [
+      [ "La Web App", "sprint7_page.html#autotoc_md21", [
+        [ "El ESP", "sprint7_page.html#autotoc_md20", null ],
+        [ "La Base de Datos", "sprint7_page.html#autotoc_md22", null ],
+        [ "La pantalla TFT", "sprint7_page.html#autotoc_md23", null ]
+      ] ]
+    ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ]
     ] ],

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['he_20buscado_20acerca_20del_20bdd_3a_0',['Por lo que he buscado acerca del BDD:',['../sprint4_page.html#autotoc_md11',1,'']]],
-  ['he_20visto_20trabajando_20con_20tdd_3a_1',['Por lo que he visto trabajando con TDD:',['../sprint4_page.html#autotoc_md10',1,'']]]
+  ['getinstance_0',['getInstance',['../class_app_1_1_database.html#ac4bf00d1027e8b74eada8230f0edd81b',1,'App::Database']]],
+  ['goutte_1',['Instalacion de Mink y Goutte',['../sprint6_page.html#autotoc_md17',1,'']]]
 ];
