@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Manager ESP32</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stock Manager</h1>
+        <div id="status" class="status">Cargando...</div>
+        
+        <div class="card">
+            <h3>Nuevo Producto</h3>
+            <input type="text" id="name" placeholder="Nombre">
+            <input type="number" id="stock" placeholder="Stock inicial">
+            <button onclick="addProduct()">Agregar</button>
+        </div>
+
+        <div id="productList" class="list"></div>
+        
+        <div class="footer">
+            <a href="/setup">Configurar WiFi</a>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
