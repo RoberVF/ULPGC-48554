@@ -7,18 +7,19 @@
 #include "vLocalPrincipal.h"
 #include <TFT_eSPI.h>
 
+#define CYD_LED_PIN 21
+
 TFT_eSPI tft = TFT_eSPI();
 
 /**
  * @brief Configuración inicial del sistema (Boot).
- * * Secuencia de arranque:
- * 1. Iniciar puerto serie.
- * 2. Inicializar Modelos (Datos y Configuración).
- * 3. Inicializar Red (Usando configuración cargada).
- * 4. Inicializar Controlador (Servidor Web).
+ * Inicia todo lo que vamos a utilizar
  */
 void setup() {
   Serial.begin(115200);
+
+  pinMode(CYD_LED_PIN, OUTPUT);
+  digitalWrite(CYD_LED_PIN, HIGH);
 
   tft.init();
   tft.setRotation(1);
@@ -31,7 +32,12 @@ void setup() {
   model.init();
   setupModel.init();
   network.init();
-  controller.init();
+
+  if (setupModel.getSSID() != "") {
+    controller.init();
+  } else {
+    Serial.println("[MAIN] Modo Configuración: Servidor Web desactivado");
+  }
 
   vSetup.init();
   vPrincipal.init();
@@ -46,11 +52,9 @@ void setup() {
 void loop() {
   network.update();
   if (WiFi.status() == WL_CONNECTED) {
-    // Si hay internet -> Mostramos el Dashboard
-    vPrincipal.update();
+    vPrincipal.update();  // Pantalla Azul (Dashboard)
   } else {
-    // Si NO hay internet -> Mostramos el Setup (Teclado)
-    vSetup.update();
+    vSetup.update();  // Pantalla Roja (Teclado)
   }
   delay(100);
 }

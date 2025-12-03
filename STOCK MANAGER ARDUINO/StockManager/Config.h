@@ -5,9 +5,6 @@
 #ifndef CONFIG_H
 #define CONFIG_H
 
-#define HOME_SSID "SSID_DEL_ROUTER"
-#define HOME_PASS "PASS_DEL_ROUTER"
-
 #define DB_PATH "/database.json"
 
 #endif

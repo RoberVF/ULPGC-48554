@@ -1,4 +1,4 @@
-# SPRINT 10. COMENTARIOS, REESTRUCTURA, MODIFICACIONES Y VISTA LOCAL
+# SPRINT 10. COMENTARIOS, REESTRUCTURA, MODIFICACIONES, VISTA LOCAL Y FUNCIONALIDAD REAL
 ### COMENTARIOS
 En primer lugar, he comenzado haciendo los comentarios con lo que se espera que haga cada función siguiendo la nomenclatura de **Javadoc**. Esto ha transcurrido sin ningún problema. 
 
@@ -20,3 +20,7 @@ Ahora trataremos la parte local. En primer lugar, he creado los archivos vLocalS
 No he podido hacer esto sin modificar el código de la librería *TFT_eSPI.h* por el siguiente motivo:
 La librería se compila ciegamente, sin ver nuestra aplicación. Si no encuentra la funcionalidad *TOUCH_CS*, piensa que el usuario no tiene pantalla táctil y, por tanto, obvia esa funcionalidad. Como borra esa funcionalidad, cuando accedo a dicha propiedad desde mi código da error porque realmente esa funcionalidad no existe. 
 Esta funcionalidad existe en la librería, simplemente debemos descomentarla para que funcione.
+
+### FUNCIONALIDAD REAL, UTILIZANDO LA PLACA
+Llego el momento de probar la aplicación en la pantalla. Lo primero, el COM adecuado y los baudios a 115200 en el serial monitor.
+En primer lugar he tenido un problema. Si no hay WiFi guardada porque es la primera vez que lo enciendes y tampoco hay AP porque vimos que no era necesario, el ESP se queda en tierra de nadie y se cuelga. La solución ha sido sencilla. Si no tenemos conexión, no necesitamos el servidor web sino solamente la vista vLocalSetup para configurar la conexión y una vez tengamos las credenciales, lanzar el servidor (el presentador). Tras esto, he conseguido el mensaje de *SISTEMA LISTO* que tanto esperaba.
