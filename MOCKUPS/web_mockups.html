@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mockup Web App - Stock Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #202020;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        /* --- MARCO DEL TELÉFONO --- */
+        .phone-frame {
+            width: 375px;  /* Ancho estándar iPhone SE / Android medio */
+            height: 667px;
+            background-color: #000;
+            border-radius: 40px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.8), inset 0 0 10px rgba(255,255,255,0.2);
+            border: 12px solid #111;
+            position: relative;
+            overflow: hidden; /* Para que la web no se salga del móvil */
+        }
+
+        /* Notch / Cámara */
+        .phone-notch {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 25px;
+            background-color: #111;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            z-index: 50;
+        }
+
+        /* Barra de estado simulada */
+        .status-bar {
+            background-color: #f3f4f6; /* Color bg-gray-100 de tu app */
+            height: 25px;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            z-index: 40;
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 20px;
+            font-size: 10px;
+            font-weight: bold;
+            color: #000;
+            align-items: center;
+        }
+
+        /* Barra de dirección navegador simulada */
+        .browser-bar {
+            background-color: #fff;
+            height: 40px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            z-index: 40;
+            border-top: 1px solid #ddd;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: #007bff;
+            font-size: 20px;
+        }
+
+        /* Pantalla Real (Tu código Web) */
+        .screen-content {
+            width: 100%;
+            height: 100%;
+            padding-top: 30px; /* Espacio para notch */
+            padding-bottom: 40px; /* Espacio barra navegador */
+            background-color: #f3f4f6; /* bg-gray-100 */
+            overflow-y: auto; /* Scroll si hay muchos productos */
+        }
+
+        /* Ocultar scrollbar para estética */
+        .screen-content::-webkit-scrollbar { width: 0px; background: transparent; }
+
+    </style>
+</head>
+<body>
+
+    <div class="phone-frame" style="margin-top: 1rem">
+        <div class="phone-notch"></div>
+        
+        <div class="status-bar">
+            <span>9:41</span>
+            <span>📶 🔋</span>
+        </div>
+
+        <div class="screen-content bg-gray-100 text-gray-900 font-sans p-4">
+            
+            <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-4">
+                <h1 class="text-2xl font-bold mb-4 text-center text-blue-600">Product List</h1>
+                
+                <div class="text-center text-sm text-green-600 mb-4 font-bold">🟢 Sistema Online</div>
+        
+                <div class="mb-4 text-center">
+                    <button class="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 shadow transition w-full">
+                        + Add Product
+                    </button>
+                </div>
+        
+                <div class="overflow-x-auto">
+                    <table class="min-w-full border border-gray-300 rounded-lg overflow-hidden text-sm">
+                        <thead class="bg-gray-200">
+                            <tr>
+                                <th class="py-2 px-2 border-b text-left">Name</th>
+                                <th class="py-2 px-2 border-b text-center">Price</th>
+                                <th class="py-2 px-2 border-b text-center">Stock</th>
+                                <th class="py-2 px-2 border-b text-center">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="productTableBody">
+                            <tr class="hover:bg-gray-50 text-center border-b">
+                                <td class="py-3 px-2 text-left font-medium">Leche</td>
+                                <td class="py-3 px-2">1.20 €</td>
+                                <td class="py-3 px-2 text-gray-800">12</td>
+                                <td class="py-3 px-2 flex justify-center items-center gap-1 flex-wrap">
+                                    <button class="bg-green-500 text-white w-6 h-6 rounded font-bold text-xs">+</button>
+                                    <button class="bg-yellow-500 text-white w-6 h-6 rounded font-bold text-xs">-</button>
+                                    <button class="bg-blue-500 text-white px-2 py-1 rounded text-xs">Upd</button>
+                                    <button class="bg-red-500 text-white px-2 py-1 rounded text-xs">Del</button>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 text-center border-b">
+                                <td class="py-3 px-2 text-left font-medium">Huevos (12)</td>
+                                <td class="py-3 px-2">2.50 €</td>
+                                <td class="py-3 px-2 text-red-600 font-bold">2</td>
+                                <td class="py-3 px-2 flex justify-center items-center gap-1 flex-wrap">
+                                    <button class="bg-green-500 text-white w-6 h-6 rounded font-bold text-xs">+</button>
+                                    <button class="bg-yellow-500 text-white w-6 h-6 rounded font-bold text-xs">-</button>
+                                    <button class="bg-blue-500 text-white px-2 py-1 rounded text-xs">Upd</button>
+                                    <button class="bg-red-500 text-white px-2 py-1 rounded text-xs">Del</button>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 text-center border-b last:border-none">
+                                <td class="py-3 px-2 text-left font-medium">Pan Molde</td>
+                                <td class="py-3 px-2">1.80 €</td>
+                                <td class="py-3 px-2 text-gray-800">5</td>
+                                <td class="py-3 px-2 flex justify-center items-center gap-1 flex-wrap">
+                                    <button class="bg-green-500 text-white w-6 h-6 rounded font-bold text-xs">+</button>
+                                    <button class="bg-yellow-500 text-white w-6 h-6 rounded font-bold text-xs">-</button>
+                                    <button class="bg-blue-500 text-white px-2 py-1 rounded text-xs">Upd</button>
+                                    <button class="bg-red-500 text-white px-2 py-1 rounded text-xs">Del</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+        <div class="browser-bar">
+            <span>&#9664;</span> <span>&#9654;</span> <span>&#8635;</span> <span>&#8801;</span> </div>
+    </div>
+
+</body>
+</html>
