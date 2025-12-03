@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mockups Stock Manager ESP32</title>
+    <style>
+        body {
+            background-color: #333;
+            font-family: 'Verdana', sans-serif;
+            /* Similar a la fuente smooth del ESP */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+            padding: 50px;
+        }
+
+        h2 {
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        /* Marco de la pantalla (Simula el borde físico de la pantalla) */
+        .screen-frame {
+            width: 320px;
+            height: 240px;
+            border: 10px solid #111;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Elementos comunes */
+        .pixel-element {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* --- PANTALLA 1: DASHBOARD (vLocalPrincipal) --- */
+        .dashboard {
+            background-color: black;
+        }
+
+        /* Header */
+        .header {
+            background-color: blue;
+            width: 320px;
+            height: 30px;
+            top: 0;
+            left: 0;
+        }
+
+        .header-text {
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+            top: 5px;
+            left: 10px;
+            text-align: left;
+            justify-content: flex-start;
+        }
+
+        .wifi-led {
+            width: 12px;
+            height: 12px;
+            background-color: #00FF00;
+            border-radius: 50%;
+            top: 9px;
+            right: 10px;
+        }
+
+        /* Info Producto */
+        .prod-name {
+            color: yellow;
+            width: 320px;
+            top: 50px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .prod-price {
+            color: #CCC;
+            width: 320px;
+            top: 90px;
+            font-size: 16px;
+        }
+
+        .prod-stock {
+            color: white;
+            width: 320px;
+            top: 120px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        /* Botones */
+        .btn {
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0;
+        }
+
+        .btn-prev {
+            background-color: #333;
+            width: 60px;
+            height: 45px;
+            top: 190px;
+            left: 5px;
+        }
+
+        .btn-minus {
+            background-color: red;
+            width: 80px;
+            height: 45px;
+            top: 190px;
+            left: 70px;
+            font-size: 30px;
+        }
+
+        .btn-plus {
+            background-color: #00FF00;
+            width: 80px;
+            height: 45px;
+            top: 190px;
+            left: 155px;
+            font-size: 30px;
+        }
+
+        .btn-next {
+            background-color: #333;
+            width: 75px;
+            height: 45px;
+            top: 190px;
+            left: 240px;
+        }
+
+
+        /* --- PANTALLA 2: SETUP WIFI (vLocalSetup) --- */
+        .setup {
+            background-color: red;
+        }
+
+        .error-title {
+            color: white;
+            width: 320px;
+            top: 60px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .error-msg1 {
+            color: white;
+            width: 320px;
+            top: 100px;
+            font-size: 14px;
+        }
+
+        .error-msg2 {
+            color: white;
+            width: 320px;
+            top: 120px;
+            font-size: 14px;
+        }
+
+        .btn-config {
+            background-color: white;
+            color: red;
+            width: 200px;
+            height: 50px;
+            top: 160px;
+            left: 60px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>Vista Principal (vLocalPrincipal)</h2>
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <div class="screen-frame dashboard">
+                <div class="pixel-element header"></div>
+                <div class="pixel-element header-text">STOCK MANAGER</div>
+                <div class="pixel-element wifi-led"></div>
+
+                <div class="pixel-element prod-name">LECHE</div>
+                <div class="pixel-element prod-price">1.20 EUR</div>
+                <div class="pixel-element prod-stock">Stock: 10</div>
+
+                <div class="pixel-element btn btn-prev">&lt;</div>
+                <div class="pixel-element btn btn-minus">-</div>
+                <div class="pixel-element btn btn-plus">+</div>
+                <div class="pixel-element btn btn-next">&gt;</div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h2>Vista Setup / Error (vLocalSetup)</h2>
+        <div style="display: flex; justify-content: center; align-items: center;">
+
+            <div class="screen-frame setup">
+                <div class="pixel-element error-title">SIN CONEXION</div>
+                <div class="pixel-element error-msg1">Toca para configurar</div>
+                <div class="pixel-element error-msg2">una nueva WiFi</div>
+
+                <div class="pixel-element btn btn-config">CONFIGURAR</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
