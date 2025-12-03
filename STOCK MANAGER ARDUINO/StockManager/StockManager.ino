@@ -5,6 +5,7 @@
 #include "pBase.h"
 #include "vLocalSetup.h"
 #include "vLocalPrincipal.h"
+#include "TouchDrv.h"
 #include <TFT_eSPI.h>
 
 #define CYD_LED_PIN 21
@@ -25,9 +26,7 @@ void setup() {
   tft.setRotation(1);
   tft.fillScreen(TFT_BLACK);
 
-  // Calibración táctil (Ajustar según tu pantalla CYD)
-  uint16_t calData[5] = { 275, 3620, 264, 3532, 1 };
-  tft.setTouch(calData);
+  touch.init();
 
   model.init();
   setupModel.init();

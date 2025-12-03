@@ -1,4 +1,5 @@
 #include "vLocalPrincipal.h"
+#include "TouchDrv.h"
 
 LocalPrincipalView vPrincipal;
 
@@ -23,7 +24,7 @@ void LocalPrincipalView::update() {
 
     // Táctil
     uint16_t x, y;
-    if (tft.getTouch(&x, &y) && (millis() - lastTouchTime > 250)) {
+    if (touch.getTouch(&x, &y) && (millis() - lastTouchTime > 250)) {
         lastTouchTime = millis();
         handleTouch(x, y);
     }
