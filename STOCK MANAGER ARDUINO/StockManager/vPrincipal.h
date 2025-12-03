@@ -1,5 +1,5 @@
-#ifndef VIEW_H
-#define VIEW_H
+#ifndef VPRINCIPAL_H
+#define VPRINCIPAL_H
 
 #include <Arduino.h>
 
