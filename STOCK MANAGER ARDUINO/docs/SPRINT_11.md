@@ -28,3 +28,6 @@ Aún así, no se mostraba nada por pantalla. Esto fue por lo que me paso hace va
 Finalmente, he tenido que instalar una nueva librería llamada **XPT2046_Touchscreen** porque en esta placa el tácti y la pantalla están conectados a pines diferentes y, por tanto, touchScreen() nunca funcionará.
 Para ello, he cambiado todo lo relacionado a la parte táctil de la librería *TFT_eSPI.h* por la nueva, creando los archivos TouchDrv (tanto .cpp como .h) y he conseguido asi que el táctil funcione.
 Ahora cuando inicio el ESP, toco la pantalla y tengo acceso a un teclado (lo más grande posible, la pantalla es la que es y hay que escribir no puedo hacer otra cosa) para poner las credenciales de la WiFi.
+
+### MOCKUPS
+Para el diseño de los mockups, he hecho una vista html + css donde se podrá ver de forma totalmente fidedigna lo qeu se va a mostrar tanto en la pantalla local como en el navegador.
